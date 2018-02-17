@@ -53,7 +53,7 @@ let goodMoviesCount = 0;
             return goodMoviesCount = total + (rating.rating >= 7);        
         },0);
         console.log(goodMoviesCount);
-        gmovies.innerHTML = "Average movie rating is " + goodMoviesCount;
+        gmovies.innerHTML = "There are " + goodMoviesCount+ ' good movies.';
     });
     averageMovies.addEventListener("click",function(){
         let average = document.getElementById("average");
@@ -63,7 +63,7 @@ let goodMoviesCount = 0;
         },0);
 
 console.log(averageMoviesCount);
-average.innerHTML = "Average movie rating is " + averageMoviesCount;
+average.innerHTML = "Average movie count is " + averageMoviesCount;
     });
 
     badMovies.addEventListener("click",function(){
